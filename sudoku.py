@@ -107,16 +107,13 @@ if __name__ == "__main__":
         [0, 0, 0, 0, 8, 0, 0, 7, 9]
     ]
 
-    
     print("Tablero inicial:")
     imprimir_tablero(tablero_sudoku)
 
-    
     inicio = time.time()  
     resuelto = resolver_sudoku_dv(tablero_sudoku) 
     fin = time.time()   
 
-    
     if resolver_sudoku_dv(tablero_sudoku):
         print("\nSolución encontrada:")
         imprimir_tablero(tablero_sudoku)
